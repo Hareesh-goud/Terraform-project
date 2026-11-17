@@ -13,7 +13,7 @@ variable "environment_name" {
 }
  
 resource "local_file" "server_config" {
-  content  = "Environment: ${var.environment_name}\nStatus: Active\n"
+  content  = "Environment: ${var.environment_name}\nStatus: version.2\n"
   filename = "/tmp/deployed_${var.environment_name}.conf"
 }
  
